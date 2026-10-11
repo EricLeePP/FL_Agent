@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-10-09",
+  "runtime": "Ollama v0.40.1 (user-level, models on the external drive)",
+  "notes": "Tags and sizes come from ollama.com/library on 2026-10-09. Options switch thinking off for every model that supports it (Ollama enables thinking by default for Gemma 4 too), so all models answer in the same latency class; gpt-oss cannot switch reasoning off and runs at its lowest effort. Run `fedeval.py check` before a long run.",
+  "models": [
+    {
+      "name": "qwen3.5-9b",
+      "ref": "qwen3.5:9b",
+      "tier": "A",
+      "priority": 1,
+      "download_gb": 6.6,
+      "params": "9B dense",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-03",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Newest small Qwen; the main candidate for researchers' 12 GB GPUs"
+    },
+    {
+      "name": "qwen3.5-4b",
+      "ref": "qwen3.5:4b",
+      "tier": "A",
+      "priority": 1,
+      "download_gb": 3.3,
+      "params": "4B dense",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-03",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Size ladder within Qwen3.5; the laptop-class floor"
+    },
+    {
+      "name": "gemma4-12b",
+      "ref": "gemma4:12b",
+      "tier": "A",
+      "priority": 1,
+      "download_gb": 8.0,
+      "params": "12B",
+      "vendor": "Google DeepMind",
+      "released": "2026-06",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "A second family at the same size class"
+    },
+    {
+      "name": "gemma4-e4b",
+      "ref": "gemma4:e4b",
+      "tier": "A",
+      "priority": 2,
+      "download_gb": 6.6,
+      "params": "4.5B effective",
+      "vendor": "Google DeepMind",
+      "released": "2026-04",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Small Gemma, to compare with qwen3.5:4b"
+    },
+    {
+      "name": "ministral3-14b",
+      "ref": "ministral-3:14b",
+      "tier": "A",
+      "priority": 1,
+      "download_gb": 9.1,
+      "params": "14B dense",
+      "vendor": "Mistral AI",
+      "released": "2025-12",
+      "license": "Apache-2.0 (verify per release)",
+      "options": {},
+      "role": "European vendor at the largest size that fits fully on the GPU"
+    },
+    {
+      "name": "granite4.2-8b",
+      "ref": "granite4.2:8b",
+      "tier": "A",
+      "priority": 1,
+      "download_gb": 5.3,
+      "params": "8B dense",
+      "vendor": "IBM",
+      "released": "2026-09",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Enterprise model that advertises JSON output and Chinese support"
+    },
+    {
+      "name": "lfm2.5-8b",
+      "ref": "lfm2.5:8b",
+      "tier": "A",
+      "priority": 2,
+      "download_gb": 5.2,
+      "params": "8.3B MoE, 1.5B active",
+      "vendor": "Liquid AI",
+      "released": "2026-05",
+      "license": "LFM Open License v1.0 (free below USD 10M revenue)",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Very fast small MoE built for tool calling; tests the speed end"
+    },
+    {
+      "name": "qwen3.6-35b-a3b",
+      "ref": "qwen3.6:35b-a3b",
+      "tier": "B",
+      "priority": 1,
+      "download_gb": 24,
+      "params": "35B MoE, 3B active",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-04",
+      "license": "Apache-2.0 (verify per release)",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Small-active MoE with partial CPU offload: bigger model, similar speed"
+    },
+    {
+      "name": "gemma4-26b-a4b",
+      "ref": "gemma4:26b",
+      "tier": "B",
+      "priority": 2,
+      "download_gb": 18,
+      "params": "25.2B MoE, 3.8B active",
+      "vendor": "Google DeepMind",
+      "released": "2026-04",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "MoE counterpart of gemma4:12b"
+    },
+    {
+      "name": "nemotron3.5-lightning",
+      "ref": "nemotron-3.5-lightning:30b",
+      "tier": "B",
+      "priority": 2,
+      "download_gb": 25,
+      "params": "30B hybrid Mamba-2/MoE, 3B active",
+      "vendor": "NVIDIA",
+      "released": "2026-08",
+      "license": "OpenMDW-1.1",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Newest NVIDIA agent model, different architecture"
+    },
+    {
+      "name": "glm4.7-flash",
+      "ref": "glm-4.7-flash",
+      "tier": "B",
+      "priority": 2,
+      "download_gb": 19,
+      "params": "30B MoE, 3B active",
+      "vendor": "Z.ai",
+      "released": "2026-06",
+      "license": "unverified",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Strong Chinese-language MoE from a second Chinese lab"
+    },
+    {
+      "name": "gpt-oss-20b",
+      "ref": "gpt-oss:20b",
+      "tier": "B",
+      "priority": 2,
+      "download_gb": 14,
+      "params": "21B MoE, 3.6B active",
+      "vendor": "OpenAI",
+      "released": "2025-08",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "low"
+      },
+      "role": "Reasoning-model reference: reasoning cannot be switched off",
+      "max_tokens": 2000
+    },
+    {
+      "name": "qwen3.8-27b",
+      "ref": "qwen3.8:27b",
+      "tier": "C",
+      "priority": 2,
+      "download_gb": 18,
+      "params": "27B",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-09",
+      "license": "Apache-2.0 (27B only)",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Ceiling reference: newest Qwen, too large for full GPU here, a server-class choice"
+    },
+    {
+      "name": "qwen3-14b-baseline",
+      "ref": "qwen3:14b",
+      "tier": "baseline",
+      "priority": 1,
+      "download_gb": 9.3,
+      "params": "14.8B dense",
+      "vendor": "Alibaba Qwen",
+      "released": "2025-04",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Earlier baseline (27/30 on the old corpus), rerun in the same runtime"
+    },
+    {
+      "name": "qwen3-4b-baseline",
+      "ref": "qwen3:4b",
+      "tier": "baseline",
+      "priority": 1,
+      "download_gb": 2.5,
+      "params": "4B dense",
+      "vendor": "Alibaba Qwen",
+      "released": "2025-04",
+      "license": "Apache-2.0",
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "role": "Earlier small baseline (18/30 on the old corpus)"
+    },
+    {
+      "name": "qwen3.5-9b-think",
+      "ref": "qwen3.5:9b",
+      "tier": "ablation",
+      "priority": 3,
+      "download_gb": 6.6,
+      "params": "9B dense",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-03",
+      "license": "Apache-2.0",
+      "options": {},
+      "role": "Ablation of qwen3.5-9b: the model's default thinking switched on before the JSON answer",
+      "max_tokens": 6000
+    },
+    {
+      "name": "qwen3.6-35b-a3b-think",
+      "ref": "qwen3.6:35b-a3b",
+      "tier": "ablation",
+      "priority": 3,
+      "download_gb": 24,
+      "params": "35B MoE, 3B active",
+      "vendor": "Alibaba Qwen",
+      "released": "2026-04",
+      "license": "Apache-2.0 (verify per release)",
+      "options": {},
+      "role": "Ablation of qwen3.6-35b-a3b: the model's default thinking switched on before the JSON answer",
+      "max_tokens": 6000
+    }
+  ],
+  "not_compared": [
+    {
+      "name": "nimble, tev1, clef-flash",
+      "why": "Decision models: they choose among supplied answers through /v1/systemone, cannot write the plan's nested JSON, and accept only 2-8k tokens. Candidates for a separate pre-classifier (supported or not, safe or not)."
+    },
+    {
+      "name": "muse-glimmer:30b",
+      "why": "Meta's Apache-2.0 agent model (18 GB); architecture undisclosed, so likely dense and slow here. Add later if a server tier is evaluated."
+    },
+    {
+      "name": "granite4.2:30b, qwen3.5:27b, qwen3.6:27b, gemma4:31b",
+      "why": "Dense 27-31B models run mostly on the CPU here; qwen3.8:27b represents this class."
+    },
+    {
+      "name": "kimi-k3, glm-5.3, deepseek-v4-pro, mistral-large-4, qwen3.5:122b",
+      "why": "Server-class (80 GB to over 600 GB at 4-bit)."
+    }
+  ]
+}

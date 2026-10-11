@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "version": "live-v6-node-metadata-20260917T010143Z",
+  "deployment": "ubuntu-synthetic-sandbox",
+  "observed_at": "2026-09-17T01:01:43.497792+00:00",
+  "expires_at": "2026-09-18T01:01:43.497792+00:00",
+  "sites": [
+    {
+      "organisation_id": 1,
+      "database_label": "synthetic_clean",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 1,
+      "database_label": "synthetic_missing",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 1,
+      "database_label": "synthetic_rare",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 1,
+      "database_label": "synthetic_small",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 2,
+      "database_label": "synthetic_clean",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 2,
+      "database_label": "synthetic_missing",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 2,
+      "database_label": "synthetic_rare",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 2,
+      "database_label": "synthetic_small",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 3,
+      "database_label": "synthetic_clean",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 3,
+      "database_label": "synthetic_missing",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 3,
+      "database_label": "synthetic_rare",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    },
+    {
+      "organisation_id": 3,
+      "database_label": "synthetic_small",
+      "complete_inventory": true,
+      "variables": {
+        "ncit:C156420": "available",
+        "ncit:C25717": "available"
+      }
+    }
+  ]
+}

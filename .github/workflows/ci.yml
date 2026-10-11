@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    name: Tests (${{ matrix.os }}, all extras)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install with the tested constraints
+        run: python -m pip install -e "./agent_mvp[sdk,live,registry,mcp]" -c agent_mvp/requirements-windows-py310.txt
+      - name: Unit tests and behaviour snapshots
+        run: python -m unittest discover -s agent_mvp/tests
+      - name: Release hygiene
+        run: python agent_mvp/scripts/check_release.py
+
+  core-only:
+    name: Core install without optional extras
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install core dependencies only
+        run: python -m pip install -e ./agent_mvp -c agent_mvp/requirements-windows-py310.txt
+      - name: Command line starts without optional extras
+        run: python -m federated_agent --help
+      - name: Unit tests (extras-dependent tests skip)
+        run: python -m unittest discover -s agent_mvp/tests
+      - name: Wheel installs and runs outside the source tree
+        run: |
+          python -m pip wheel --no-deps -w dist ./agent_mvp
+          python -m venv "$RUNNER_TEMP/wheel-env"
+          "$RUNNER_TEMP/wheel-env/bin/python" -m pip install dist/*.whl -c agent_mvp/requirements-windows-py310.txt
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/wheel-env/bin/python" -m federated_agent --describe
+          "$RUNNER_TEMP/wheel-env/bin/python" -m federated_agent --output wheel-smoke \
+            --request "Describe age at diagnosis in hospital 1 and hospital 2 using default."
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: python -m pip install "ruff>=0.15,<0.16"
+      - run: ruff check agent_mvp

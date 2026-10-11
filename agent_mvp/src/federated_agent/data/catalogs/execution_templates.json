@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "defaults": {"joshi_vantage6_userclient": "1.1.0"},
+  "templates": [{
+    "id": "joshi_vantage6_userclient",
+    "version": "1.1.0",
+    "runtime_adapter": "vantage6_userclient_v1",
+    "export_asset": "joshi_vantage6_userclient.py.tpl",
+    "vantage6_version": "4.15.0",
+    "poll_interval_seconds": 3
+  }]
+}

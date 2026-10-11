@@ -1,0 +1,7 @@
+{
+  "algorithms": "../catalogs/algorithms.json",
+  "deployment": "ubuntu_sandbox.json",
+  "availability": "ubuntu_data_availability.json",
+  "semantics": "../catalogs/AYA_cancer_schema.jsonld",
+  "templates": "../catalogs/execution_templates.json"
+}

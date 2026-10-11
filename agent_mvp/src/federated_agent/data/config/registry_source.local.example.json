@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "source": "../../../../../integration/registry-release.json",
+  "deployment": "ubuntu-synthetic-sandbox",
+  "cache_dir": "../../../../../integration/registry-cache-local",
+  "allow_unsigned_local": true,
+  "connection": {
+    "server_url": "http://127.0.0.1",
+    "server_port": 17601,
+    "server_api": "/api",
+    "collaboration_id": 1
+  }
+}

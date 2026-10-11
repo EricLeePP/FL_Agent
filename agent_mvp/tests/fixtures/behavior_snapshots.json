@@ -1,0 +1,2993 @@
+{
+ "chat_clarify_confirm_report": {
+  "turn-001": {
+   "files": [
+    "catalog_snapshot.json",
+    "plan_revision.json",
+    "planning_response.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json"
+   ],
+   "response": {
+    "issues": [
+     "missing_database"
+    ],
+    "report_status": "not_requested",
+    "status": "needs_clarification",
+    "submission_state": "not_submitted"
+   }
+  },
+  "turn-002": {
+   "files": [
+    "catalog_snapshot.json",
+    "mock_result.json",
+    "parsed_result.json",
+    "plan_revision.json",
+    "planning_response.json",
+    "prepared_task.json",
+    "request.json",
+    "researcher_confirmation.json",
+    "researcher_response.md",
+    "response.json",
+    "result.html",
+    "run_manifest.json",
+    "run_vantage6_task.py",
+    "task_spec.json"
+   ],
+   "response": {
+    "issues": [],
+    "report_status": "completed",
+    "status": "completed",
+    "submission_state": "completed"
+   }
+  }
+ },
+ "chat_conversation_unsupported_cancel": {
+  "turn-001": {
+   "files": [
+    "planning_response.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json"
+   ],
+   "response": {
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "conversation",
+    "submission_state": "not_submitted"
+   }
+  },
+  "turn-002": {
+   "files": [
+    "planning_response.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json"
+   ],
+   "response": {
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "conversation",
+    "submission_state": "not_submitted"
+   }
+  },
+  "turn-003": {
+   "files": [
+    "catalog_snapshot.json",
+    "planning_response.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json"
+   ],
+   "response": {
+    "issues": [
+     "authorization_unverified",
+     "runtime_unverified"
+    ],
+    "report_status": "not_requested",
+    "status": "algorithms",
+    "submission_state": "not_submitted"
+   }
+  },
+  "turn-004": {
+   "files": [
+    "catalog_snapshot.json",
+    "plan_revision.json",
+    "planning_response.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json"
+   ],
+   "response": {
+    "issues": [
+     "unmet_requirements"
+    ],
+    "report_status": "not_requested",
+    "status": "unsupported",
+    "submission_state": "not_submitted"
+   }
+  },
+  "turn-005": {
+   "files": [
+    "catalog_snapshot.json",
+    "plan_revision.json",
+    "planning_response.json",
+    "prepared_task.json",
+    "request.json",
+    "researcher_response.md",
+    "response.json",
+    "run_manifest.json",
+    "run_vantage6_task.py",
+    "task_spec.json"
+   ],
+   "response": {
+    "issues": [
+     "runtime_unverified",
+     "authorization_unverified",
+     "data_unverified",
+     "data_unverified"
+    ],
+    "report_status": "not_requested",
+    "status": "ready",
+    "submission_state": "not_submitted"
+   }
+  }
+ },
+ "corpus_demo_deployment": {
+  "B01": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B02": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B03": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B04": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B05": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_missing"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_missing",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B06": {
+   "issues": [
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital a"
+    ],
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital b"
+    ],
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "sites",
+     "hospital a",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "sites",
+     "hospital b",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "database_label",
+     "synthetic_clean",
+     []
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B07": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B08": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_sites",
+     "question",
+     "sites",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     []
+    ],
+    [
+     "sites",
+     null,
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "select_sites_first"
+    ]
+   ]
+  },
+  "B09": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "default"
+     ]
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B10": {
+   "issues": [
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital 99"
+    ],
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "sites",
+     "hospital 99",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "database_label",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B11": {
+   "issues": [
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital 99"
+    ],
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "sites",
+     "hospital 99",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "database_label",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B12": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "default"
+     ]
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B13": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B14": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_nonexistent"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_nonexistent",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B15": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Fit a Cox proportional hazards model in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Fit a Cox proportional hazards model in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Fit a Cox proportional hazards model in hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B16": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": "hospital",
+    "parameters": {},
+    "purpose": "Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted"
+  },
+  "B17": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Train a synthetic data generator in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Train a synthetic data generator in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Train a synthetic data generator in hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B18": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Write arbitrary Python and execute it directly inside hospital 1."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Write arbitrary Python and execute it directly inside hospital 1.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B19": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25."
+    ],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B20": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020."
+    ],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B21": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B22": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Compute the exact pooled patient-level median diagnosis age in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Compute the exact pooled patient-level median diagnosis age in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B23": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Return minimum and maximum diagnosis age from hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Return minimum and maximum diagnosis age from hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B24": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B25": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B26": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_clean"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_clean",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B27": {
+   "issues": [
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "algorithms",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "select_sites_first"
+    ]
+   ]
+  },
+  "B28": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "algorithm_id"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "algorithm_id",
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B29": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Download individual patient records from hospital 1 and send me the CSV."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Download individual patient records from hospital 1 and send me the CSV.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B30": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "default"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  }
+ },
+ "corpus_ubuntu_valid_inventory": {
+  "B01": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "execution": {
+     "error": null,
+     "result": {
+      "categorical_general_statistics": "{\"variable\": {\"0\": \"ncit:C25717\", \"1\": \"ncit:C25717\"}, \"value\": {\"0\": \"alive\", \"1\": \"deceased\"}, \"count\": {\"0\": 101, \"1\": 27}}",
+      "numerical_general_statistics": "{\"variable\": {\"0\": \"ncit:C156420\", \"1\": \"ncit:C156420\"}, \"statistic\": {\"0\": \"count\", \"1\": \"mean\"}, \"value\": {\"0\": 128, \"1\": 27.4}}"
+     },
+     "status": "completed"
+    },
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "completed",
+    "submission_state": "completed"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ],
+     [
+      "hospital 2",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1,
+       2
+      ],
+      "variables_to_describe": {
+       "ncit:C156420": {
+        "datatype": "numerical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 2",
+      "hospital 2",
+      2,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "age at diagnosis",
+      "age_at_initial_diagnosis",
+      "ncit:C156420",
+      "numerical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B02": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "execution": {
+     "error": null,
+     "result": {
+      "categorical_general_statistics": "{\"variable\": {\"0\": \"ncit:C25717\", \"1\": \"ncit:C25717\"}, \"value\": {\"0\": \"alive\", \"1\": \"deceased\"}, \"count\": {\"0\": 101, \"1\": 27}}",
+      "numerical_general_statistics": "{\"variable\": {\"0\": \"ncit:C156420\", \"1\": \"ncit:C156420\"}, \"statistic\": {\"0\": \"count\", \"1\": \"mean\"}, \"value\": {\"0\": 128, \"1\": 27.4}}"
+     },
+     "status": "completed"
+    },
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "completed",
+    "submission_state": "completed"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1, hospital 2 and hospital 3 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2",
+     "hospital 3"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ],
+     [
+      "hospital 2",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ],
+     [
+      "hospital 3",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe age at diagnosis in hospital 1, hospital 2 and hospital 3 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1,
+       2,
+       3
+      ],
+      "variables_to_describe": {
+       "ncit:C156420": {
+        "datatype": "numerical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 2",
+      "hospital 2",
+      2,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 3",
+      "hospital 3",
+      3,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "age at diagnosis",
+      "age_at_initial_diagnosis",
+      "ncit:C156420",
+      "numerical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B03": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "execution": {
+     "error": null,
+     "result": {
+      "categorical_general_statistics": "{\"variable\": {\"0\": \"ncit:C25717\", \"1\": \"ncit:C25717\"}, \"value\": {\"0\": \"alive\", \"1\": \"deceased\"}, \"count\": {\"0\": 101, \"1\": 27}}",
+      "numerical_general_statistics": "{\"variable\": {\"0\": \"ncit:C156420\", \"1\": \"ncit:C156420\"}, \"statistic\": {\"0\": \"count\", \"1\": \"mean\"}, \"value\": {\"0\": 128, \"1\": 27.4}}"
+     },
+     "status": "completed"
+    },
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "completed",
+    "submission_state": "completed"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe survival status in hospital 1 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "survival status"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "survival_status",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe survival status in hospital 1 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1
+      ],
+      "variables_to_describe": {
+       "ncit:C25717": {
+        "datatype": "categorical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "survival status",
+      "survival_status",
+      "ncit:C25717",
+      "categorical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B04": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B05": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "execution": {
+     "error": null,
+     "result": {
+      "categorical_general_statistics": "{\"variable\": {\"0\": \"ncit:C25717\", \"1\": \"ncit:C25717\"}, \"value\": {\"0\": \"alive\", \"1\": \"deceased\"}, \"count\": {\"0\": 101, \"1\": 27}}",
+      "numerical_general_statistics": "{\"variable\": {\"0\": \"ncit:C156420\", \"1\": \"ncit:C156420\"}, \"statistic\": {\"0\": \"count\", \"1\": \"mean\"}, \"value\": {\"0\": 128, \"1\": 27.4}}"
+     },
+     "status": "completed"
+    },
+    "issues": [],
+    "report_status": "not_requested",
+    "status": "completed",
+    "submission_state": "completed"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_missing",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_missing.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ],
+     [
+      "hospital 2",
+      "age_at_initial_diagnosis",
+      "available",
+      "metadata_snapshot",
+      "reported"
+     ]
+    ],
+    "databases": [
+     "synthetic_missing"
+    ],
+    "description": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_missing.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1,
+       2
+      ],
+      "variables_to_describe": {
+       "ncit:C156420": {
+        "datatype": "numerical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_missing"
+     ],
+     [
+      "hospital 2",
+      "hospital 2",
+      2,
+      "synthetic_missing"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "age at diagnosis",
+      "age_at_initial_diagnosis",
+      "ncit:C156420",
+      "numerical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B06": {
+   "issues": [
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B07": {
+   "issues": [
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B08": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_sites",
+     "question",
+     "sites",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     []
+    ],
+    [
+     "sites",
+     null,
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "select_sites_first"
+    ]
+   ]
+  },
+  "B09": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B10": {
+   "issues": [
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital 99"
+    ],
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "sites",
+     "hospital 99",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "database_label",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B11": {
+   "issues": [
+    [
+     "unknown_site",
+     "question",
+     "sites",
+     "hospital 99"
+    ],
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "sites",
+     "hospital 99",
+     [
+      "hospital 1",
+      "hospital 2",
+      "hospital 3"
+     ]
+    ],
+    [
+     "database_label",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B12": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ],
+    [
+     "missing_variables",
+     "question",
+     "variables",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ],
+    [
+     "variables",
+     null,
+     []
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B13": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B14": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "synthetic_nonexistent"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "synthetic_nonexistent",
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B15": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Fit a Cox proportional hazards model in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Fit a Cox proportional hazards model in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Fit a Cox proportional hazards model in hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B16": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": "hospital",
+    "parameters": {},
+    "purpose": "Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Generate a Kaplan-Meier survival curve using hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted"
+  },
+  "B17": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Train a synthetic data generator in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Train a synthetic data generator in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Train a synthetic data generator in hospital 1 and hospital 2."
+    ],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B18": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Write arbitrary Python and execute it directly inside hospital 1."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Write arbitrary Python and execute it directly inside hospital 1.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B19": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2, only for patients younger than 25."
+    ],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B20": {
+   "issues": [
+    [
+     "unmet_requirements",
+     "error",
+     null,
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [
+     "Offline demo cannot safely interpret this condition or analysis: Describe age at diagnosis in hospital 1 and hospital 2 for diagnoses between 2010 and 2020."
+    ],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B21": {
+   "issues": [
+    [
+     "data_unavailable",
+     "error",
+     "hospital 1.gender",
+     null
+    ],
+    [
+     "data_unavailable",
+     "error",
+     "hospital 2.gender",
+     null
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_clean, stratified by gender.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis",
+     "gender"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "data_unavailable",
+   "submission_state": "not_submitted"
+  },
+  "B22": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Compute the exact pooled patient-level median diagnosis age in hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Compute the exact pooled patient-level median diagnosis age in hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B23": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Return minimum and maximum diagnosis age from hospital 1 and hospital 2."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Return minimum and maximum diagnosis age from hospital 1 and hospital 2.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B24": {
+   "issues": [
+    [
+     "data_unavailable",
+     "error",
+     "hospital 1.gender",
+     null
+    ],
+    [
+     "data_unavailable",
+     "error",
+     "hospital 2.gender",
+     null
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe gender in hospital 1 and hospital 2 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "gender"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "data_unavailable",
+   "submission_state": "not_submitted"
+  },
+  "B25": {
+   "issues": [
+    [
+     "site_count_unsupported",
+     "error",
+     "sites",
+     null
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "invalid_request",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B26": {
+   "issues": [
+    [
+     "site_count_unsupported",
+     "error",
+     "sites",
+     null
+    ]
+   ],
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis and survival status in hospital 2 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis",
+     "survival status"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "invalid_request",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B27": {
+   "issues": [
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "algorithms",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "select_sites_first"
+    ]
+   ]
+  },
+  "B28": {
+   "issues": [
+    [
+     "unknown_database",
+     "question",
+     "database_label",
+     "algorithm_id"
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     "algorithm_id",
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted"
+  },
+  "B29": {
+   "issues": [
+    [
+     "unsupported_analysis",
+     "error",
+     null,
+     "Download individual patient records from hospital 1 and send me the CSV."
+    ]
+   ],
+   "plan": {
+    "algorithm_id": null,
+    "analysis_type": "unsupported",
+    "database_label": null,
+    "parameters": {},
+    "purpose": "Download individual patient records from hospital 1 and send me the CSV.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": []
+   },
+   "report_status": "not_requested",
+   "status": "unsupported",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  },
+  "B30": {
+   "issues": [
+    [
+     "missing_database",
+     "question",
+     "database_label",
+     null
+    ]
+   ],
+   "questions": [
+    [
+     "database_label",
+     null,
+     [
+      "synthetic_clean",
+      "synthetic_missing",
+      "synthetic_rare",
+      "synthetic_small"
+     ]
+    ]
+   ],
+   "report_status": "not_requested",
+   "status": "needs_clarification",
+   "submission_state": "not_submitted",
+   "suggested": [
+    [
+     "strongaya_descriptive_statistics",
+     "declared_for_selection"
+    ]
+   ]
+  }
+ },
+ "expired_inventory": {
+  "B01": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 1.age_at_initial_diagnosis",
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 2.age_at_initial_diagnosis",
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "issues": [
+     [
+      "data_verification_required",
+      "error",
+      null,
+      null
+     ]
+    ],
+    "report_status": "not_requested",
+    "status": "preflight_error",
+    "submission_state": "not_submitted"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "age_at_initial_diagnosis",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ],
+     [
+      "hospital 2",
+      "age_at_initial_diagnosis",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe age at diagnosis in hospital 1 and hospital 2 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1,
+       2
+      ],
+      "variables_to_describe": {
+       "ncit:C156420": {
+        "datatype": "numerical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 2",
+      "hospital 2",
+      2,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "age at diagnosis",
+      "age_at_initial_diagnosis",
+      "ncit:C156420",
+      "numerical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B02": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 1.age_at_initial_diagnosis",
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 2.age_at_initial_diagnosis",
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 3.age_at_initial_diagnosis",
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "issues": [
+     [
+      "data_verification_required",
+      "error",
+      null,
+      null
+     ]
+    ],
+    "report_status": "not_requested",
+    "status": "preflight_error",
+    "submission_state": "not_submitted"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe age at diagnosis in hospital 1, hospital 2 and hospital 3 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1",
+     "hospital 2",
+     "hospital 3"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "age at diagnosis"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "age_at_initial_diagnosis",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ],
+     [
+      "hospital 2",
+      "age_at_initial_diagnosis",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ],
+     [
+      "hospital 3",
+      "age_at_initial_diagnosis",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe age at diagnosis in hospital 1, hospital 2 and hospital 3 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1,
+       2,
+       3
+      ],
+      "variables_to_describe": {
+       "ncit:C156420": {
+        "datatype": "numerical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 2",
+      "hospital 2",
+      2,
+      "synthetic_clean"
+     ],
+     [
+      "hospital 3",
+      "hospital 3",
+      3,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "age at diagnosis",
+      "age_at_initial_diagnosis",
+      "ncit:C156420",
+      "numerical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  },
+  "B03": {
+   "issues": [
+    [
+     "runtime_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "authorization_unverified",
+     "warning",
+     null,
+     null
+    ],
+    [
+     "data_metadata_expired",
+     "warning",
+     "hospital 1.survival_status",
+     null
+    ],
+    [
+     "data_snapshot_only",
+     "warning",
+     null,
+     null
+    ]
+   ],
+   "mock_execution": {
+    "issues": [
+     [
+      "data_verification_required",
+      "error",
+      null,
+      null
+     ]
+    ],
+    "report_status": "not_requested",
+    "status": "preflight_error",
+    "submission_state": "not_submitted"
+   },
+   "plan": {
+    "algorithm_id": "strongaya_descriptive_statistics",
+    "analysis_type": "descriptive_statistics",
+    "database_label": "synthetic_clean",
+    "parameters": {},
+    "purpose": "Describe survival status in hospital 1 using synthetic_clean.",
+    "request_type": "analysis",
+    "sites": [
+     "hospital 1"
+    ],
+    "stratification_variables": [],
+    "unsupported_requirements": [],
+    "variables": [
+     "survival status"
+    ]
+   },
+   "report_status": "not_requested",
+   "status": "ready",
+   "submission_state": "not_submitted",
+   "task": {
+    "algorithm": [
+     "strongaya_descriptive_statistics",
+     "2.1.0",
+     "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0"
+    ],
+    "collaboration": [
+     1,
+     1
+    ],
+    "connection": [
+     "ubuntu-synthetic-sandbox",
+     "4.15.0",
+     "http://127.0.0.1",
+     17601,
+     "/api"
+    ],
+    "data_checks": [
+     [
+      "hospital 1",
+      "survival_status",
+      "unknown",
+      "metadata_snapshot",
+      "expired"
+     ]
+    ],
+    "databases": [
+     "synthetic_clean"
+    ],
+    "description": "Describe survival status in hospital 1 using synthetic_clean.",
+    "input": {
+     "kwargs": {
+      "organisation_ids": [
+       1
+      ],
+      "variables_to_describe": {
+       "ncit:C25717": {
+        "datatype": "categorical"
+       }
+      },
+      "variables_to_stratify": null
+     },
+     "method": "central"
+    },
+    "name": "Agent-generated STRONG AYA descriptive statistics",
+    "policy": [
+     true,
+     "not_checked",
+     [
+      "mvp_allow_all_policy"
+     ]
+    ],
+    "requires_managed_execution": true,
+    "resolved_sites": [
+     [
+      "hospital 1",
+      "hospital 1",
+      1,
+      "synthetic_clean"
+     ]
+    ],
+    "resolved_variables": [
+     [
+      "survival status",
+      "survival_status",
+      "ncit:C25717",
+      "categorical"
+     ]
+    ],
+    "result_adapter": "descriptive_statistics_v1",
+    "warnings": [
+     "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+     "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15",
+     "Algorithm availability: sandbox_verified. Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+    ]
+   }
+  }
+ }
+}

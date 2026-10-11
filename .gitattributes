@@ -1,0 +1,3 @@
+# Task confirmations hash catalog, template and metadata bytes.
+# Preserve the checked-in bytes across platforms; do not normalize line endings.
+* -text

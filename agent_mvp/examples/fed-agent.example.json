@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "output": "runs",
+  "metadata": {
+    "deployment": "metadata/ubuntu_sandbox.json",
+    "data_availability": "metadata/ubuntu_data_availability.json"
+  },
+  "policy": {
+    "config": "metadata/policy.json"
+  },
+  "llm": {
+    "provider": "deepseek",
+    "runtime": "sdk",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "stream": true
+  },
+  "backend": {
+    "kind": "vantage6",
+    "confirm_synthetic_unencrypted_sandbox": true,
+    "timeout_seconds": 600
+  },
+  "logging": {
+    "verbosity": 0,
+    "file": "runs/fed-agent.log"
+  }
+}

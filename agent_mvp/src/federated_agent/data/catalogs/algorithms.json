@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "catalog_version": "0.3.0",
+  "updated_at": "2026-09-07",
+  "description": "Agent execution contracts. Availability is declared configuration, not live hospital discovery. No credentials or patient records belong here.",
+  "algorithms": [
+    {
+      "algorithm_id": "strongaya_descriptive_statistics",
+      "display_name": "STRONG AYA descriptive statistics",
+      "algorithm_version": "2.1.0",
+      "status": "enabled",
+      "analysis_types": ["descriptive_statistics"],
+      "request_keywords": ["describe", "descriptive statistics"],
+      "description": "Summarize selected numerical and categorical variables across configured data sites using the STRONG AYA semantic schema.",
+      "capabilities": [
+        "Multi-site numerical count, mean, missing count and adjusted population standard deviation",
+        "Categorical frequencies subject to local sample-size suppression"
+      ],
+      "constraints": {"min_sites": 1, "min_sites_for_numerical": 2},
+      "limitations": [
+        "Not survival modelling, synthetic-data training, or arbitrary Python execution",
+        "Cohort filters, time restrictions, and stratification are not implemented by this agent contract",
+        "Summary statistics must not be assumed to equal pooled patient-level statistics without validating the upstream aggregation method",
+        "Single-site numerical summaries are disabled: v2.1.0 returned an empty table in reproduced Ubuntu S01 task 5; do not add hospitals automatically",
+        "Median and quartiles are federated estimates, not exact pooled quantiles; minimum and maximum are not returned",
+        "Sandbox evidence is not production authorization or a guarantee of current node health"
+      ],
+      "vantage6_version": "4.15",
+      "function": "central",
+      "image": "ghcr.io/strongaya/v6-descriptive-statistics:v2.1.0",
+      "accepted_arguments": ["variables_to_describe", "variables_to_stratify", "organisation_ids"],
+      "supports_stratification": false,
+      "source": {
+        "kind": "algorithm_implementation",
+        "uri": "https://github.com/STRONGAYA/v6-descriptive-statistics/blob/v2.1.0/v6-descriptive-statistics/central.py",
+        "version": "2.1.0"
+      },
+      "metadata_source": {
+        "kind": "algorithm_store_metadata",
+        "uri": "https://github.com/STRONGAYA/v6-descriptive-statistics/blob/v2.1.0/algorithm_store.json",
+        "version": "2.1.0"
+      },
+      "contract_warnings": [
+        "algorithm_store argument metadata differs from the pinned central() implementation signature; use organisation_ids, not organization_ids or return_partials",
+        "algorithm_store Vantage6 version differs from the package runtime dependency; this contract targets 4.15"
+      ],
+      "availability": [
+        {
+          "deployment": "local-demo-sandbox",
+          "organisation_ids": [1, 2, 3],
+          "database_labels": ["default"],
+          "verification": "declared",
+          "evidence": "Demo configuration only; these IDs and the image have not been verified in a real hospital deployment."
+        },
+        {
+          "deployment": "ubuntu-synthetic-sandbox",
+          "organisation_ids": [1, 2, 3],
+          "database_labels": ["synthetic_clean", "synthetic_missing", "synthetic_rare", "synthetic_small"],
+          "verification": "sandbox_verified",
+          "evidence": "Public Ubuntu return bundle 2026-09-07: S02-S08 basic statistics passed, S09 suppression and S10 expected privacy refusal. Windows S02 task 40 passed. See integration/ubuntu_results_2026-09-07/ubuntu_vantage6_handoff/UBUNTU_DEPLOYMENT_RESULT.md. No production claims."
+        }
+      ],
+      "execution": {
+        "adapter": "vantage6_kwargs_v1",
+        "result_adapter": "descriptive_statistics_v1",
+        "input_bindings": {
+          "variables_to_describe": {"source": "variables_by_class"},
+          "variables_to_stratify": {"source": "constant", "value": null},
+          "organisation_ids": {"source": "organisation_ids"}
+        },
+        "parameters_schema": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        },
+        "kwargs_schema": {
+          "type": "object",
+          "required": ["variables_to_describe", "variables_to_stratify", "organisation_ids"],
+          "additionalProperties": false,
+          "properties": {
+            "variables_to_describe": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "object",
+                "required": ["datatype"],
+                "properties": {"datatype": {"enum": ["numerical", "categorical"]}},
+                "additionalProperties": false
+              }
+            },
+            "variables_to_stratify": {"type": "null"},
+            "organisation_ids": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

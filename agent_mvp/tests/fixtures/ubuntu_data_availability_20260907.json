@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "version": "ubuntu-fixture-inventory-2026-09-07",
+  "deployment": "ubuntu-synthetic-sandbox",
+  "observed_at": "2026-09-06T21:23:30Z",
+  "expires_at": "2026-09-14T21:23:30Z",
+  "sites": [
+    {"organisation_id": 1, "database_label": "synthetic_clean", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 2, "database_label": "synthetic_clean", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 3, "database_label": "synthetic_clean", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 1, "database_label": "synthetic_missing", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 2, "database_label": "synthetic_missing", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 3, "database_label": "synthetic_missing", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 1, "database_label": "synthetic_rare", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 2, "database_label": "synthetic_rare", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 3, "database_label": "synthetic_rare", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 1, "database_label": "synthetic_small", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 2, "database_label": "synthetic_small", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}},
+    {"organisation_id": 3, "database_label": "synthetic_small", "complete_inventory": true, "variables": {"ncit:C156420": "available", "ncit:C25717": "available"}}
+  ]
+}

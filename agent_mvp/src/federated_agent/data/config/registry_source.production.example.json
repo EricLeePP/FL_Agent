@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "source": "https://registry.example.org/federation/current.json",
+  "deployment": "replace-with-approved-deployment",
+  "cache_dir": "../../../../../integration/registry-cache-production",
+  "trusted_public_key": "REPLACE_WITH_BASE64_ED25519_PUBLIC_KEY",
+  "allow_unsigned_local": false,
+  "token_env": "FED_REGISTRY_TOKEN",
+  "connection": {
+    "server_url": "https://vantage6.example.org",
+    "server_port": 443,
+    "server_api": "/api",
+    "collaboration_id": 1
+  }
+}
